@@ -1,0 +1,10 @@
+img {     
+	max-width: 50%;
+    display: block;
+    height: auto;
+    margin: 0 auto; 
+}
+h1 {
+	text-align: center;
+	padding: 50px;
+}
