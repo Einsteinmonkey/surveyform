@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Gamer Survey</h1>
+    <div id="form-outer">
+      <p id="description">What type of games do you like?</p>
+
+      <form id="survey-form">  
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label">*Name</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" autofocus type="text" id="name" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label">*Email</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" autofocus type="email" id="email" placeholder="Enter your email" required>
+      </div>
+    </div>
+
+  <div class="rowTab">
+    <div class="labels">
+      <label id="number-label">*Age</label>
+    </div>
+      <div class="rightTab">      
+            <input class="input-field" autofocus type="number" id="number" placeholder="#" min="1" max="100" required>
+      </div>
+  </div>
+
+  <div class="rowTab">
+    <div class="labels">
+      <label>"Which type of game best fits your style?</label>
+    </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="Acton">Action</option>
+          <option value="rpg">RPG</option>
+          <option value="strat">Strategy</option>
+
+        </select>      
+      </div>
+  </div>
+
+  <div class="rowTab">
+    <div class="labels">
+      <label>* How many hours do you spend playing video games?</label>
+    </div>
+      <div class="rightTab">      
+        <ul sytle="list-style: none;">
+            <li class="radio">
+              <label>"0-1 hours"<input name="radio-buttons" value="2" type="radio" class="userRatings">
+              </label>
+            </li>
+            <li class="radio">
+              <label>"2-4 hours"<input name="radio-buttons" value="1" type="radio" class="userRatings">
+              </label>
+            </li>
+            <li class="radio">
+              <label>"5+ hours"<input name="radio-buttons" value="3" type="radio" class="userRatings">
+              </label>
+            </li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="rowTab">
+    <div class="labels">
+      <label>Which video game console do you like most?</label>  
+    </div>
+    <div class="rightTab">
+      <select name="mostLike" id="dropdown">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="ps">PS4</option>
+        <option value="xbox">Xbox One</option>
+        <option value="nin">Nintendo Switch</option>
+
+        </select>
+    </div>
+  </div>
+
+  <div class="rowTab">
+    <div class="labels">
+      <label>Things that should be improved in the future
+        <br>
+        ("Check all that apply")
+      </label>  
+    </div>
+    <div class="rightTab">      
+        <ul sytle="list-style: none;">
+            <li class="checkbox">
+              <label>"Graphics"<input name="prefer" value="1" type="checkbox" class="userRatings">
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>"Controllers"<input name="prefer" value="2" type="checkbox" class="userRatings">
+              </label>
+            </li>
+            <li class="checkbox">
+              <label>"Processing Speed"<input name="prefer" value="3" type="checkbox" class="userRatings">
+              </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+        <div class="labels">
+          <label>Any comments or Suggestions</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" style="height: 50px; width: 280px; resize: vertical;" 
+          class="input-field" placeholder="Enter your comment here">
+          </textarea>
+        </div>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+
+</form>
+</div>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
